@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#prints Best school and hi
+var=0
+while [ $var -lt 10 ]
+do
+	echo "Best School"
+	if [ $var -eq 8 ]
+	then
+		echo "Hi"
+	fi
+	var=$(( var + 1 ))
+done
