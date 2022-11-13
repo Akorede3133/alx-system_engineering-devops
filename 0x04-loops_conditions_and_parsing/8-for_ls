@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#The content of the current directory
+curr=$PWD
+for file in *
+do
+	echo "$file" | cut -d "-" -f 2
+done
