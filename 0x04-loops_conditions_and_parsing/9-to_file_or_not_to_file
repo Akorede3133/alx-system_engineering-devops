@@ -4,15 +4,15 @@ file="school"
 if [ -e "$file" ]
 then
 	echo "$file file exists"
-	if [ -n $file ]
-	then
-		echo "$file file is empty"
-	elif [ -z "$file" ] 
+	if [ -s "$file" ]
 	then
 		echo "$file file is not empty"
-	elif [ -f "school" ]
+	else
+		echo "$file file is empty"
+	fi
+	if [ -f "$file" ]
 	then
-		echo "hello"
+		echo "$file is a regular file"
 	fi
 else
 	echo "$file file does not exist"
